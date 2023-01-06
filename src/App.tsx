@@ -7,12 +7,15 @@ import ContactUs from "./pages/ContactUs"
 import Home from "./pages/Home"
 import Landlord from "./pages/Landlord"
 import Tenants from "./pages/Tenants"
+import AboutUs from './components/AboutUs'
 
 
 function App() {
   return (
   <Box>
     <Home />
+    <AboutUs />
+    <Landlord />
   </Box>
   )
 }

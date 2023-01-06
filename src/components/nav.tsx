@@ -5,8 +5,9 @@ import MenuNav from './MenuNav';
 
 const nav = () => {
 return (
+<nav>
 <HStack w={'90vw'} py={3}  borderBottom={'1px'}  bg={'transparent'}
-    borderColor='white' mx='auto' pos={'sticky'} top={0} zIndex={1}>
+    borderColor='white' mx='auto' px={'1rem'}>
         <Flex justify={'flex-start'} align='center' >
             <Image alt='logo' src={logo} w={'150px'} />
         </Flex>
@@ -44,6 +45,7 @@ return (
             <MenuNav />
         </Flex>
 </HStack>
+</nav>
 )
 }
 

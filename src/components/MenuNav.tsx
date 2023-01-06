@@ -11,6 +11,7 @@ const MenuNav = () => {
             aria-label='Options'
             icon={<AiOutlineMenu />}
             variant='outline'
+            color={'blue'}
         />
             <MenuList  minW={'50vw'} fontSize={'2xl'} p={2} bg={'blackAlpha.700'}> 
                 <MenuItem  >

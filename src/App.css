@@ -5,3 +5,28 @@
   font-family: serif;
 }
 
+.paginationBttns{
+  width: 80%;
+  height: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a{
+  padding: 5px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover{
+  color: white;
+  background-color: orangered;
+}
+
+.paginationActive a{
+  color: white;
+  background-color: green;
+}

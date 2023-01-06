@@ -13,7 +13,7 @@ const Home = () => {
     <Nav />
    <Grid templateColumns='repeat(2, 1fr)' mt={['3em', '3rem', 0, 0]} gap={5}>
     <GridItem colSpan={[2,2,1,1]} w='100%'  ml={[0, 0, '4rem', '4rem']}>
-      <Heading size={['xl', 'xl', '2xl', '2xl']} lineHeight={'3rem'} color={'white'} 
+      <Heading size={['lg', 'xl', '2xl', '2xl']} lineHeight={'3rem'} color={'white'} 
           position={['relative','relative','absolute','absolute']} 
           top={[0, 0,'13rem','13rem']} textAlign={'center'}>
           The Most Affortable <br/> Place To Stay In The <br/>San Franciso Bay Area 
@@ -21,8 +21,8 @@ const Home = () => {
     </GridItem>
 
     <GridItem colSpan={[2,2,1,1]} w={'100%'} mt={'3rem'}>
-        <VStack mt={'2rem'} w='100%'>
-          <Image alt='map' src={map} w={['300px','300px','350px','350px']} rounded={'3xl'} mb={3} />
+        <VStack mt={'2rem'} w='100%' pb={'3rem'}>
+          <Image alt='map' src={map} w={['250px','300px','350px']} rounded={'3xl'} mb={3} />
           <HStack spacing={1} bg={'white'} p={4} rounded={'2xl'} w={['80%', '80%', '60%','60%']}>
           <FormControl w={'80%'}>
           <Select size={'lg'} variant='outline'>
