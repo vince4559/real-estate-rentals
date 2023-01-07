@@ -6,16 +6,17 @@
 }
 
 .paginationBttns{
-  width: 80%;
+  width: 100%;
   height: 20px;
   list-style: none;
   display: flex;
   justify-content: center;
+  color:brown;
 }
 
 .paginationBttns a{
-  padding: 5px;
-  margin: 8px;
+  padding: 6px;
+  margin: 3px;
   border-radius: 5px;
   border: 1px solid red;
   cursor: pointer;
@@ -28,5 +29,5 @@
 
 .paginationActive a{
   color: white;
-  background-color: green;
+  background-color:  orangered;
 }

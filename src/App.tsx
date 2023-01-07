@@ -16,6 +16,8 @@ function App() {
     <Home />
     <AboutUs />
     <Landlord />
+    <Tenants />
+    <ContactUs />
   </Box>
   )
 }

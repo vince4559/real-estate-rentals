@@ -31,7 +31,7 @@ const Landlord = () => {
                 </Text>
             </Stack>
           </CardBody>
-          <Divider />
+          <Divider  borderColor='gray.600' />
             <CardFooter m='1' p='1'>
                <HStack justify={'space-evenly'} w='200px'>
                <HStack spacing={1}>
@@ -61,14 +61,14 @@ const Landlord = () => {
   }
   return (
    <section>
-    <Box p={'3rem'} px='3rem' bg={'gray.50'} py={'2rem'} >
-      <HStack justify={'space-between'}>
-        <Heading pl={4} size='lg'>
+    <Box p={'3rem'} px='3rem' bg={'blackAlpha.100'} py={'2rem'} >
+      <HStack justify={'space-between'} gap={4}> 
+        <Heading pl={2} size='md'>
           <Text borderBottom={'2px'} borderColor="red" display='inline'>
             List</Text> of Properties
         </Heading>
 
-        <Button  colorScheme={'red'} w={'fit-content'}>
+        <Button  colorScheme={'red'} w={['full','full','fit-content','fit-content']}>
           View All Property
         </Button>
       </HStack>
@@ -90,18 +90,3 @@ const Landlord = () => {
 }
 
 export default Landlord
-
-
-{/* <Flex justify={'space-around'} mt='3rem' px='2rem' gap={4} wrap='wrap'>
-          {RentalData.map((rent) => {
-           return <RentCard 
-           key={rent.id}
-           id={rent.id} 
-           img={rent.img} 
-           street={rent.street} 
-           price={rent.price} 
-           paymentPlan={rent.paymentPlan} 
-           type={rent.type} 
-           />
-          })}
-        </Flex> */}
