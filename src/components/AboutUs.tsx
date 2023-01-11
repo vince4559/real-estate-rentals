@@ -1,11 +1,10 @@
-import { Box, Grid, GridItem, Heading, HStack, Image, Stack, Text, VStack } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading, HStack, Icon, Image, Stack, Text, VStack } from "@chakra-ui/react";
 import about from '../assets/about.jpg'
-import vector from '../assets/vector.png'
-import vector1 from '../assets/Vector (1).png'
-import vector2 from '../assets/Vector (2).png'
-import vector3 from '../assets/Vector (3).png'
-import vector4 from '../assets/Vector (4).png'
-import vector5 from '../assets/Vector (5).png'
+import { AiOutlineDollarCircle, AiTwotoneHome } from "react-icons/ai";
+import {BsStack, BsBookmarkStarFill, } from "react-icons/bs";
+import {GiCrystalGrowth, } from "react-icons/gi";
+import {GiMoonClaws, } from "react-icons/gi";
+
 
 const AboutUs = () => {
   return (
@@ -17,42 +16,42 @@ const AboutUs = () => {
             </Text>  takes care of everything
             </Heading>
 
-            <Grid templateColumns='repeat(3, 1fr)' mt={['.5rem','1rem','3rem','3rem']}>
+            <Grid templateColumns='repeat(3, 1fr)' gap={4} mt={['.5rem','1rem','1rem','3rem']}>
                 <GridItem colSpan={[3,3,1,1]}>
                     <VStack>
                         <Image alt="about-image" src={about} w='300px' h={'400px'} />
                     </VStack>
                 </GridItem>
 
-                <GridItem colSpan={[3,3,2,2]} mt={['1rem','2rem','4rem','4rem']}>
-                    <Stack spacing={'4rem'} p={'.5rem'}>
-                    <HStack w='100%' textAlign={'center'} spacing={4}>
+                <GridItem colSpan={[3,3,2,2]} mt={['1rem','2rem','2rem','4rem']} gap={4}>
+                    <Stack spacing={'4rem'}  >
+                    <HStack w='100%' textAlign={'center'} justify='space-evenly' >
                         <VStack>
-                            <Image alt='$-icon' src={vector} w={'35px'} />
-                            <Text>Pay as Little as possible!</Text>
+                           <Icon as={AiOutlineDollarCircle} color='red' fontSize='3xl'/>
+                            <Text>Pay as Little <br/> as possible!</Text>
                         </VStack>
                         <VStack>
-                            <Image alt='$-icon' src={vector1} w={'33px'} />
-                            <Text>Enjoy wisdom of community!</Text>
+                           <Icon as={AiTwotoneHome} color='red' fontSize='3xl'/>
+                            <Text>Enjoy wisdom <br/> of community!</Text>
                         </VStack>
                         <VStack>
-                            <Image alt='$-icon' src={vector2} w={'33px'} />
-                            <Text>Let's somebody else take care of Landlord!</Text>
+                            <Icon as={BsStack} color='red' fontSize='3xl'/>
+                            <Text>Let's somebody else <br/> take care of Landlord!</Text>
                         </VStack>
                     </HStack>
 
-                    <HStack w='100%' textAlign={'center'} spacing={4}>
+                    <HStack w='100%' textAlign={'center'} justify='space-evenly'>
                         <VStack>
-                            <Image alt='$-icon' src={vector3} w={'33px'} />
-                            <Text>Pay as Little as possible!</Text>
+                            <Icon as={GiCrystalGrowth} color='red' fontSize='3xl'/>
+                            <Text>Enjoy peaceful <br/> Environment!</Text>
                         </VStack>
                         <VStack>
-                            <Image alt='$-icon' src={vector4} w={'33px'} />
-                            <Text>Enjoy wisdom of community!</Text>
+                            <Icon as={BsBookmarkStarFill} color='red' fontSize='3xl'/>
+                            <Text>Stay Safe! <br/> Save Money!</Text>
                         </VStack>
                         <VStack>
-                            <Image alt='$-icon' src={vector5} w={'33px'} />
-                            <Text>Let's somebody else take care of Landlord!</Text>
+                            <Icon as={GiMoonClaws} color='red' fontSize='3xl'/>
+                            <Text>Pay for what <br/> you use!</Text>
                         </VStack>
                     </HStack>
                     </Stack>
