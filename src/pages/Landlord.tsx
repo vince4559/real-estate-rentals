@@ -14,7 +14,7 @@ const Landlord = () => {
   const displayUsers = RentalData.slice(pageVisited, pageVisited + userPerPage).map((rent) => {
     return (
       <Flex mb={'2rem'} key={rent.id}  >
-       <Card maxW='300px' >
+       <Card maxW='280px' >
           <CardBody >
             <Image 
                 w='300px'
@@ -60,7 +60,7 @@ const Landlord = () => {
     window.scroll(0, 1300)
   }
   return (
-   <section>
+   <section id="landlord" >
     <Box p={'3rem'} px='3rem' bg={'blackAlpha.100'} py={'2rem'} >
       <HStack justify={'space-between'} gap={4}> 
         <Heading pl={2} size='md'>
@@ -68,7 +68,7 @@ const Landlord = () => {
             List</Text> of Properties
         </Heading>
 
-        <Button  colorScheme={'red'} w={['full','full','fit-content','fit-content']}>
+        <Button size={['xm', 'md', 'lg', 'lg']} colorScheme={'red'} w={['full','full','fit-content','fit-content']}>
           View All Property
         </Button>
       </HStack>

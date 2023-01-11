@@ -1,6 +1,7 @@
 import { Box, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 import { AiOutlineMenu } from "react-icons/ai";
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const MenuNav = () => {
   return (
@@ -13,26 +14,26 @@ const MenuNav = () => {
             variant='outline'
             color={'blue'}
         />
-            <MenuList  minW={'50vw'} fontSize={'2xl'} p={2} bg={'blackAlpha.700'}> 
+            <MenuList  minW={'50vw'} fontSize={'2xl'} p={2} bg={'blackAlpha.700'} color='blue'> 
                 <MenuItem  >
-                    <NavLink to={'/'} style={({isActive}) => isActive? {color:'greenyellow'}: {color:'blue'}}>
-                        Home
-                    </NavLink>
+                    <HashLink smooth to="/#home">
+                    Home
+                    </HashLink>
                 </MenuItem>
                 <MenuItem >
-                    <NavLink to={'/landlord'} style={({isActive}) => isActive? {color:'greenyellow'}: {color:'blue'}}>
-                        Landlord
-                    </NavLink>
+                    <HashLink smooth to="/#landlord">
+                    Landlord
+                    </HashLink>
                 </MenuItem>
                 <MenuItem >
-                    <NavLink to={'/tenants'} style={({isActive}) => isActive? {color:'greenyellow'}: {color:'blue'}}>
+                    <HashLink smooth to="/#tenants">
                     Tenants
-                    </NavLink>
+                    </HashLink>
                 </MenuItem>
                 <MenuItem >
-                <NavLink to={'/contact'} style={({isActive}) => isActive? {color:'greenyellow'}: {color:'blue'}}>
+                    <HashLink smooth to="/#contact">
                     Contact Us
-                </NavLink>  
+                    </HashLink>  
                 </MenuItem> 
             </MenuList>
     </Menu>

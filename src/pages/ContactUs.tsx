@@ -24,85 +24,86 @@ const ContactUs = () => {
   const [formData, setFormData] = useState<FormProps>(initialData)
 
   const handleEvent = (event:React.FormEvent) => {
-     
+     const {name, value}:any = event.target;
+     setFormData({...formData, 
+    [name]: value})
   }
   return (
-    <Box p='2rem' px={'2rem'} bg='blackAlpha.100'>
-      <Heading textAlign={'center'} size={'sm'}>
-      Your property with us and be Confident that Your Room will be Filled Out!
-      </Heading>
+      <section id='contact'>
+        <Box p='2rem' px={'2rem'} bg='blackAlpha.100'>
+          <Heading textAlign={'center'} size={'sm'}>
+          Your property with us and be Confident that Your Room will be Filled Out!
+          </Heading>
 
-      <Box w='90%' bg={'white'}  mx='auto' my={'2rem'} p='1rem' 
-      boxShadow={'dark-lg'} rounded='2xl'>
-          <Heading color={'red'} size={'lg'} textAlign='center' py='1rem' mb={'1rem'}>
-            Add A New Property
-          </Heading>    
-          <form>
-         <Flex gap={3}  wrap={'wrap'} ml={[]} mb='1rem'>
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Name</FormLabel>
-              <Input type={'text'} placeholder='Enter Name' name='user_name' />
-           </FormControl>
-          
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Address</FormLabel>
-              <Input type={'text'} placeholder='Enter Address' name='user_address' />
-           </FormControl>
+          <Box w='90%' bg={'white'}  mx='auto' my={'2rem'} p='1rem' 
+          boxShadow={'dark-lg'} rounded='2xl'>
+              <Heading color={'red'} size={'lg'} textAlign='center' py='1rem' mb={'1rem'}>
+                Add A New Property
+              </Heading>    
+              <form>
+            <Flex gap={3}  wrap={'wrap'} ml={[]} mb='1rem'>
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>Name</FormLabel>
+                  <Input type={'text'} placeholder='Enter Name' 
+                  onChange={handleEvent}
+                  value={formData.user_name}
+                  name='user_name' />
+              </FormControl>
+              
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>Address</FormLabel>
+                  <Input type={'text'} placeholder='Enter Address' name='user_address' />
+              </FormControl>
 
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Unit Number</FormLabel>
-              <Input type={'number'} placeholder='Enter Unit' 
-              name='user_unit' />
-           </FormControl>
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>Unit Number</FormLabel>
+                  <Input type={'number'} placeholder='Enter Unit' 
+                  name='user_unit' />
+              </FormControl>
 
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>City</FormLabel>
-           <Select placeholder='select City' name='user_city'>
-             </Select>
-           </FormControl>
-          
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>State</FormLabel>
-             <Select placeholder='select State'>
-             </Select>
-           </FormControl>
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>City</FormLabel>
+              <Select placeholder='select City' name='user_city'>
+                </Select>
+              </FormControl>
+              
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>State</FormLabel>
+                <Select placeholder='select State'>
+                </Select>
+              </FormControl>
 
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Room Type</FormLabel>
-             <Select placeholder='select Room Type'  name='room_type'>
-             </Select>
-           </FormControl>
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>Room Type</FormLabel>
+                <Select placeholder='select Room Type'  name='room_type'>
+                </Select>
+              </FormControl>
 
-           <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Unit Number</FormLabel>
-              <Input type={'number'} placeholder='Enter Price' 
-               name='room_price' />
-           </FormControl>
+              <FormControl isRequired w={['100%','100%','30%','30%']}>
+              <FormLabel>Unit Number</FormLabel>
+                  <Input type={'number'} placeholder='Enter Price' 
+                  name='room_price' />
+              </FormControl>
 
-           {/* <FormControl isRequired w={['100%','100%','30%','30%']}>
-           <FormLabel>Room Type</FormLabel>
-             <Select placeholder='select Room Type'>
-             </Select>
-           </FormControl> */}
+              <FormControl isRequired>
+                <FormLabel>Description</FormLabel>
+                <Textarea placeholder='Enter Description' rows={5} name='description' />
+              </FormControl>
 
-           <FormControl isRequired>
-            <FormLabel>Description</FormLabel>
-            <Textarea placeholder='Enter Description' rows={5} name='description' />
-           </FormControl>
-
-           <FormControl isRequired>
-            <FormLabel>Upload Photos</FormLabel>
-            <Input type={'file'} color='red' h='100px' name='image'/>
-           </FormControl>
-         </Flex>
-         <VStack p={'1rem'}>
-         <Button type='submit' colorScheme={'red'} w={['90%','90%','50%','50%']}>
-          Add New Property
-        </Button>
-         </VStack>
-          </form>
-      </Box>
-    </Box>
+              <FormControl isRequired>
+                <FormLabel>Upload Photos</FormLabel>
+                <Input type={'file'} color='red' h='100px' name='image'/>
+              </FormControl>
+            </Flex>
+            <VStack p={'1rem'}>
+            <Button type='submit' colorScheme={'red'} w={['90%','90%','50%','50%']}>
+              Add New Property
+            </Button>
+            </VStack>
+              </form>
+          </Box>
+        </Box>
+      </section>
   )
 }
 
