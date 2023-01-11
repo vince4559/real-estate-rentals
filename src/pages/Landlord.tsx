@@ -1,5 +1,5 @@
 import { Heading, HStack, Text, Box, Button, Stack, Flex, Card, CardBody, CardFooter, Divider, Image } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AiFillCar } from 'react-icons/ai'
 import { GiDeskLamp } from 'react-icons/gi'
 import { HiHashtag } from 'react-icons/hi'
