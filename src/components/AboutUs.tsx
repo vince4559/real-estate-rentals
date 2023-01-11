@@ -19,7 +19,7 @@ const AboutUs = () => {
             <Grid templateColumns='repeat(3, 1fr)' gap={4} mt={['.5rem','1rem','1rem','3rem']}>
                 <GridItem colSpan={[3,3,1,1]}>
                     <VStack>
-                        <Image alt="about-image" src={about} w='300px' h={'400px'} />
+                        <Image alt="about-image" src={about} w='300px' h={'400px'} loading='lazy' />
                     </VStack>
                 </GridItem>
 

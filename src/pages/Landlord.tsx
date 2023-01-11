@@ -19,9 +19,10 @@ const Landlord = () => {
             <Image 
                 w='300px'
                 h='200px'
-                src={rent.img}
+                src={rent?.img}
                 alt='rentals-img'
                 borderRadius='lg'
+                loading='lazy'
             />
             <Stack mt='2' spacing='1'>
                 <Heading size='md'>{rent.street}</Heading>
