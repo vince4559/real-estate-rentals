@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+
 import './App.css'
 import ContactUs from "./pages/ContactUs"
 import Home from "./pages/Home"
@@ -11,7 +11,7 @@ import Footer from './pages/Footer'
 
 function App() {
   return (
-  <Box>
+  <>
     <Home />
     <AboutUs />
     <Landlord />
@@ -19,7 +19,7 @@ function App() {
     <ContactUs />
     <Testimony />
     <Footer />
-  </Box>
+  </>
   )
 }
 

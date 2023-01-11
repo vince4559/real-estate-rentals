@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, GridItem, Heading, Image, Stack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, GridItem, Heading, Image, Text, VStack } from '@chakra-ui/react'
 import tent from '../assets/tent.jpg'
 
 const Tenants = () => {

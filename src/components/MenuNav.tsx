@@ -1,6 +1,5 @@
 import { Box, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 import { AiOutlineMenu } from "react-icons/ai";
-import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const MenuNav = () => {
