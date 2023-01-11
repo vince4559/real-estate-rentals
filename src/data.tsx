@@ -7,10 +7,12 @@ export interface RentalProps {
     type: string;
 }
 
+
+
 export const RentalData:RentalProps[] = [
     {
         id:1,
-        img: 'src/assets/rentals/rent1.jpg',
+        img: 'public/rentals/rent1.jpg',
         street:'5678 Lombard Street, san francisco, CA, 94810',
         price: 1300,
         paymentPlan: 'Monthly',
@@ -18,7 +20,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:2,
-        img:  'src/assets/rentals/rent2.jpg',
+        img:  'public/rentals/rent2.jpg',
         street:'9078 Haight  Street, san francisco, CA, 99110',
         price: 1000,
         paymentPlan: 'Monthly',
@@ -26,7 +28,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:3,
-        img:  'src/assets/rentals/rent3.jpg',
+        img:  'public/rentals/rent3.jpg',
         street:'9978 Castro Street, san francisco, CA, 99410',
         price: 2500,
         paymentPlan: 'Monthly',
@@ -34,7 +36,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:4,
-        img:  'src/assets/rentals/rent4.jpg',
+        img:  'public/rentals/rent4.jpg',
         street:'5678 Valencia Street, san francisco, CA, 49340',
         price: 3000,
         paymentPlan: 'Monthly',
@@ -42,7 +44,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:5,
-        img:  'src/assets/rentals/rent5.jpg',
+        img:  'public/rentals/rent5.jpg',
         street:'2743 Valencia Street, san francisco, CA, 8931',
         price: 3200,
         paymentPlan: 'Monthly',
@@ -50,7 +52,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:6,
-        img:  'src/assets/rentals/rent6.jpg',
+        img:  'public/rentals/rent6.jpg',
         street:'8733 Embarcadero Street, san francisco, CA, 9860',
         price: 3400,
         paymentPlan: 'Monthly',
@@ -58,7 +60,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:7,
-        img:  'src/assets/rentals/rent7.jpg',
+        img:  'public/rentals/rent7.jpg',
         street:'890 Grant Avenue, san francisco, CA, 7545',
         price: 2500,
         paymentPlan: 'Monthly',
@@ -66,7 +68,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:8,
-        img:  'src/assets/rentals/rent8.jpg',
+        img:  'public/rentals/rent8.jpg',
         street:'890 Divisadero, san francisco, CA, 7545',
         price: 3500,
         paymentPlan: 'Monthly',
@@ -74,7 +76,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:9,
-        img: 'src/assets/rentals/rent9.jpg',
+        img: 'public/rentals/9.jpg',
         street:'5678 Lombard Street, san francisco, CA, 94810',
         price: 1200,
         paymentPlan: 'Monthly',
@@ -82,7 +84,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:10,
-        img:  'src/assets/rentals/rent3.jpg',
+        img: 'public/rentals/rent10.jpg',
         street:'9978 Castro Street, san francisco, CA, 99410',
         price: 2500,
         paymentPlan: 'Monthly',
@@ -90,7 +92,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:11,
-        img:  'src/assets/rentals/rent11.jpg',
+        img:  'public/rentals/rent11.jpg',
         street:'2743 Valencia Street, san francisco, CA, 8931',
         price: 3200,
         paymentPlan: 'Monthly',
@@ -98,7 +100,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:12,
-        img: 'src/assets/rentals/rent12.jpg',
+        img: 'public/rentals/rent12.jpg',
         street:'5678 Lombard Street, san francisco, CA, 94810',
         price: 1200,
         paymentPlan: 'Monthly',
@@ -106,7 +108,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:13,
-        img:  'src/assets/rentals/rent4.jpg',
+        img:  'public/rentals/rent5.jpg',
         street:'5678 Valencia Street, san francisco, CA, 49340',
         price: 3000,
         paymentPlan: 'Monthly',
@@ -114,7 +116,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:14,
-        img:  'src/assets/rentals/rent5.jpg',
+        img:  'public/rentals/rent8.jpg',
         street:'2743 Valencia Street, san francisco, CA, 8931',
         price: 3200,
         paymentPlan: 'Monthly',
@@ -122,7 +124,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:15,
-        img:  'src/assets/rentals/rent6.jpg',
+        img:  'public/rentals/rent4.jpg',
         street:'8733 Embarcadero Street, san francisco, CA, 9860',
         price: 3400,
         paymentPlan: 'Monthly',
@@ -130,7 +132,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:16,
-        img:  'src/assets/rentals/rent7.jpg',
+        img:  'public/rentals/rent7.jpg',
         street:'890 Grant Avenue, san francisco, CA, 7545',
         price: 2500,
         paymentPlan: 'Monthly',
@@ -138,7 +140,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:17,
-        img:  'src/assets/rentals/rent8.jpg',
+        img:  'public/rentals/rent11.jpg',
         street:'890 Divisadero, san francisco, CA, 7545',
         price: 3500,
         paymentPlan: 'Monthly',
@@ -146,7 +148,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:18,
-        img: 'src/assets/rentals/rent9.jpg',
+        img: 'public/rentals/rent9.jpg',
         street:'5678 Lombard Street, san francisco, CA, 94810',
         price: 1200,
         paymentPlan: 'Monthly',
@@ -154,7 +156,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:19,
-        img:  'src/assets/rentals/rent3.jpg',
+        img:  'public/rentals/rent8.jpg',
         street:'9978 Castro Street, san francisco, CA, 99410',
         price: 2500,
         paymentPlan: 'Monthly',
@@ -162,7 +164,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:20,
-        img:  'src/assets/rentals/rent11.jpg',
+        img:  'public/rentals/rent10.jpg',
         street:'2743 Valencia Street, san francisco, CA, 8931',
         price: 3200,
         paymentPlan: 'Monthly',
@@ -170,7 +172,7 @@ export const RentalData:RentalProps[] = [
     },
     {
         id:21,
-        img: 'src/assets/rentals/rent12.jpg',
+        img: 'public/rentals/rent12.jpg',
         street:'5678 Lombard Street, san francisco, CA, 94810',
         price: 1200,
         paymentPlan: 'Monthly',
