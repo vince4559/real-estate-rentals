@@ -1,6 +1,6 @@
 import { Box, Grid, GridItem, Heading, HStack, Image, Stack, Text } from '@chakra-ui/react'
 import customer from '../assets/customer.jpg'
-
+import poster from '../assets/poster.png'
 import estatevideo from '../assets/video/estate.mp4'
 
 
@@ -31,7 +31,7 @@ const Testimony = () => {
             </GridItem>
             <GridItem colSpan={[2,2,1,1]}>
                 <Box p={2} mt={4}>
-                <video  width='450px' height='320px' loop controls >
+                <video poster={poster}  width='450px' height='320px' loop controls >
                         <source src={estatevideo} 
                         type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' 
                         />
